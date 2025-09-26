@@ -5,3 +5,147 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Crimson Text", serif;
+    font-weight: 100;
+}
+
+.main-visual {
+    width: 90vw;
+    height: auto;
+    margin: 4% auto 0 auto;
+}
+
+.main-visual img {
+    max-width: 100%;
+    object-position: center;
+}
+
+header {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto 30px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.site-title, .logo {
+    margin-right: 50px;
+    width: 110px;
+    line-height: 1px;
+}
+
+.site-title img, .logo img {
+    width: 100%;
+}
+
+.site-title a {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    display: inline-flex;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+main :nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+section img {
+    width: 50%;
+}
+
+section .text {
+    width: 50%;
+    height: fit-content;
+    margin: auto 0;
+    padding: 0 7%;
+    justify-content: center;
+}
+
+section .text .section-title {
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+section .text .section-title-en {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+section .text p {
+    display: block;
+    text-wrap: wrap;
+    font-size: 1.1rem;
+}
+
+footer {
+    display: flex;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 0 0 0 auto;
+}
+
+
+@media screen and (max-width: 767px) {
+    .main-visual {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-visual img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    header {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    header li:last-child {
+        margin-right: 0;
+    }
+
+    main section img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    main section .text {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+}
